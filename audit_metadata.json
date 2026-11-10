@@ -1,0 +1,117 @@
+{
+  "source_repo": "tornadoweb/tornado",
+  "source_url": "https://github.com/tornadoweb/tornado",
+  "audit_date": "2026-11-10T10:07:26.191858",
+  "scanner_version": "1.3.0",
+  "findings_count": 13,
+  "severity_breakdown": {
+    "HIGH": 8,
+    "CRITICAL": 5
+  },
+  "findings": [
+    {
+      "id": "PY-PATH-001",
+      "name": "Path traversal via unsanitized input",
+      "severity": "HIGH",
+      "cwe": "CWE-22",
+      "file": "tornado/autoreload.py",
+      "line": 233
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "demos/facebook/facebook.py",
+      "line": 36
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tornado/test/security_corpus_test.py",
+      "line": 92
+    },
+    {
+      "id": "PY-DESER-001",
+      "name": "Insecure deserialization",
+      "severity": "CRITICAL",
+      "cwe": "CWE-502",
+      "file": "tornado/test/httputil_test.py",
+      "line": 567
+    },
+    {
+      "id": "PY-DESER-001",
+      "name": "Insecure deserialization",
+      "severity": "CRITICAL",
+      "cwe": "CWE-502",
+      "file": "tornado/test/simple_httpclient_test.py",
+      "line": 1222
+    },
+    {
+      "id": "JS-EVAL-001",
+      "name": "Code injection via eval()",
+      "severity": "CRITICAL",
+      "cwe": "CWE-95",
+      "file": "demos/chat/static/chat.js",
+      "line": 58
+    },
+    {
+      "id": "JS-EVAL-001",
+      "name": "Code injection via eval()",
+      "severity": "CRITICAL",
+      "cwe": "CWE-95",
+      "file": "demos/chat/static/chat.js",
+      "line": 102
+    },
+    {
+      "id": "PY-PATH-001",
+      "name": "Path traversal via unsanitized input",
+      "severity": "HIGH",
+      "cwe": "CWE-22",
+      "file": "tornado/test/web_test.py",
+      "line": 2507
+    },
+    {
+      "id": "PY-DESER-001",
+      "name": "Insecure deserialization",
+      "severity": "CRITICAL",
+      "cwe": "CWE-502",
+      "file": "tornado/test/web_test.py",
+      "line": 4823
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tornado/test/web_test.py",
+      "line": 117
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tornado/test/web_test.py",
+      "line": 864
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tornado/test/web_test.py",
+      "line": 4113
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "demos/google_auth/main.py",
+      "line": 105
+    }
+  ]
+}
